@@ -28,7 +28,7 @@
             <!-- Each type is controlled to be a number with a step in any length allowing for decimals -->
             Length:<input type="number" name="length" value="" step="any" placeholder="length" required/><br>
             Width:<input type="number" name="width" value="" step="any" placeholder="width" required/><br>
-            <input type="submit" name="submit" value="submit"/>            
+            <input type="submit" name="submit" value="Calculate!"/>            
         </form>
         
     </body>
