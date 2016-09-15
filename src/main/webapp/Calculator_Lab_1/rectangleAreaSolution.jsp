@@ -9,9 +9,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Lab 1</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        
+        <h1>Lab 1 Results</h1>
+        
+        <%
+        Object area = request.getAttribute("area");
+        %>
+        
+        
+        <h3>Area:  <%out.println(area.toString());%></h3>
+        
     </body>
 </html>

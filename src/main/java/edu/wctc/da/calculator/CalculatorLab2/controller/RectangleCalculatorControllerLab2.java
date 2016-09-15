@@ -1,7 +1,7 @@
 /*
  * 
  */
-package edu.wctc.da.calculator.CalculatorLab1.controller;
+package edu.wctc.da.calculator.CalculatorLab2.controller;
 
 import edu.wctc.da.calculator.CalculatorLab1.model.RectangleCalculatorService;
 import java.io.IOException;
@@ -17,14 +17,14 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author David Arnell
  */
-@WebServlet(name = "RectangleCalculator", urlPatterns = {"/rectanglecalculator"})
-public class RectangleCalculatorController extends HttpServlet {
+@WebServlet(name = "RectangleCalculatorControllerLab2", urlPatterns = {"/RectangleCalculatorControllerLab2"})
+public class RectangleCalculatorControllerLab2 extends HttpServlet {
     
     final String WIDTH = "width";
     final String LENGTH = "length";
     final String AREA = "area";
     
-    final String SOLUTIONPAGE = "/Calculator_Lab_1/rectangleAreaSolution.jsp";
+    final String SOLUTIONPAGE = "/Calculator_Lab_2/rectangleAreaCalculatorAndSolution.jsp";
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,6 +37,7 @@ public class RectangleCalculatorController extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
         
         RectangleCalculatorService rc = new RectangleCalculatorService();
         

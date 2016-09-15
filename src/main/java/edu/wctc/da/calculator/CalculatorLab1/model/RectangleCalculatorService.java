@@ -9,7 +9,10 @@ import java.text.ParseException;
  *
  * @author David Arnell
  */
-public class RectangleCalculator {
+public class RectangleCalculatorService {
+
+    public RectangleCalculatorService() {
+    }
     
     private double length;
     private double width;
@@ -17,13 +20,16 @@ public class RectangleCalculator {
     
     public String calculateRectangleArea(String sLength, String sWidth){// throws ParseException{
         
-        try{
+//        try{
+//            this.length = Double.parseDouble(sLength);
+//            this.width = Double.parseDouble(sWidth);
+//        } catch (Exception e){
+//            
+//        }
+
             this.length = Double.parseDouble(sLength);
             this.width = Double.parseDouble(sWidth);
-        } catch (Exception e){
-            
-        }
-        
+                
         area = length * width;
         
         return Double.toString(area);

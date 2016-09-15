@@ -24,8 +24,24 @@
             <b>Lab #1</b><br>
             Calculating the area of a rectangle and displaying the results on a separate page<br>
         </p>   
-        <form id="timeMessageForm" name="timeMessageForm" method="POST" action="Calculator_Lab_1/rectangleAreaCalculator.jsp">
+        <form id="lab1Form" name="lab1Form" method="POST" action="Calculator_Lab_1/rectangleAreaCalculator.jsp">
             <input type="submit" name="submit" value="Lab #1"/>            
-        </form>
+        </form></br>
+        
+        <p>
+            <b>Lab #2</b><br>
+            Calculating the area of a rectangle and displaying the results on the same page<br>
+        </p>   
+        <form id="lab2Form" name="lab2Form" method="POST" action="Calculator_Lab_2/rectangleAreaCalculatorAndSolution.jsp">
+            <input type="submit" name="submit" value="Lab #2"/>            
+        </form></br>
+        
+        <p>
+            <b>Lab #3</b><br>
+            Calculating the area of a rectangle, circle, and triangle and displaying the results on the same page<br>
+        </p>   
+        <form id="lab3Form" name="lab3Form" method="POST" action="Calculator_Lab_3/lab3Calculators.jsp">
+            <input type="submit" name="submit" value="Lab #3"/>            
+        </form></br>
     </body>
 </html>
