@@ -51,6 +51,7 @@ public class CalculatorLab3Controller extends HttpServlet {
             Lab3CalculatorService calculator = new Lab3CalculatorService();
             
             // Create the variables for the calculators
+            // variables will be accessed with JSTL/EL
             String rectangleArea = "";
             String length = "";
             String width = "";

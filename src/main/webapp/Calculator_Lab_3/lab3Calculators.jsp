@@ -34,13 +34,14 @@
         <div>        
             <%
                 // Set the values of the Objects displayed by the calculator
-                Object length = "";
-                Object width = "";
+                //Object length = "";
+                //Object width = "";
                 Object rectangleArea = "";
                 
                 // Test to see if the named attributes are still null
                 // if any atribute is null, the String value for that attribute
                 // is not requested from the controller
+                /*
                 if(request.getAttribute("length") != null){
                     length = request.getAttribute("length");
                 } else {
@@ -52,6 +53,7 @@
                 } else {
                     width = "";
                 }
+                */
                 
                 if(request.getAttribute("rectangleArea") != null){
                     rectangleArea = request.getAttribute("rectangleArea");
@@ -84,17 +86,19 @@
         <div>        
             <%
                 // Set the values of the Objects displayed by the calculator
-                Object radius = "";
+                //Object radius = "";
                 Object circleArea = "";
                 
                 // Test to see if the named attributes are still null
                 // if any atribute is null, the String value for that attribute
                 // is not requested from the controller
+                /*
                 if(request.getAttribute("radius") != null){
                     radius = request.getAttribute("radius");
                 } else {
                     length = "";
                 }
+*/
                 
                 if(request.getAttribute("circleArea") != null){
                     circleArea = request.getAttribute("circleArea");
@@ -123,13 +127,14 @@
         <div>        
             <%
                 // Set the values of the Objects displayed by the calculator
-                Object base = "";
-                Object height = "";
+                //Object base = "";
+                //Object height = "";
                 Object triangleArea = "";
                 
                 // Test to see if the named attributes are still null
                 // if any atribute is null, the String value for that attribute
                 // is not requested from the controller
+                /*
                 if(request.getAttribute("base") != null){
                     base = request.getAttribute("base");
                 } else {
@@ -141,6 +146,7 @@
                 } else {
                     height = "";
                 }
+                */
                 
                 if(request.getAttribute("triangleArea") != null){
                     triangleArea = request.getAttribute("triangleArea");
