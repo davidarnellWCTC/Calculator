@@ -58,9 +58,13 @@
                 if(request.getAttribute("rectangleArea") != null){
                     rectangleArea = request.getAttribute("rectangleArea");
                     
+                    //Trying to use JSTL/EL for values
                     //<c:set var="length" value="${length}"/>
                     
                     // display values if there is a valid rectangle area
+                    
+                    // None of the following works but this at least allows the
+                    // page to load.
                     out.println("<h3>Length:  ${length} </h3>");
                     out.println("<h3>Width: ${width} </h3>");
                     out.println("<h3>Area: ${rectangleArea} </h3>");
