@@ -31,12 +31,13 @@
             </form>
         </div>
         
-        <div>        
+        <div>
+            ${rectangle.rectangleArea}
             <%
                 // Set the values of the Objects displayed by the calculator
                 //Object length = "";
                 //Object width = "";
-                Object rectangleArea = "";
+                //Object rectangleArea = "";
                 
                 // Test to see if the named attributes are still null
                 // if any atribute is null, the String value for that attribute
@@ -53,10 +54,10 @@
                 } else {
                     width = "";
                 }
-                */
+                
                 
                 if(request.getAttribute("rectangleArea") != null){
-                    rectangleArea = request.getAttribute("rectangleArea");
+                    //rectangleArea = request.getAttribute("rectangleArea");
                     
                     //Trying to use JSTL/EL for values
                     //<c:set var="length" value="${length}"/>
@@ -71,6 +72,7 @@
                 } else {
                     rectangleArea = "";
                 }
+*/
             %>        
             
             
@@ -87,11 +89,12 @@
             </form>
         </div>
         
-        <div>        
+        <div>
+            ${circle.circleArea}
             <%
                 // Set the values of the Objects displayed by the calculator
                 //Object radius = "";
-                Object circleArea = "";
+                //Object circleArea = "";
                 
                 // Test to see if the named attributes are still null
                 // if any atribute is null, the String value for that attribute
@@ -102,7 +105,7 @@
                 } else {
                     length = "";
                 }
-*/
+
                 
                 if(request.getAttribute("circleArea") != null){
                     circleArea = request.getAttribute("circleArea");
@@ -110,7 +113,8 @@
                     out.println("<h3>Circle Area: ${circleArea} </h3>");
                 } else {
                     circleArea = "";
-                }                
+                }  
+*/
             %>        
             
             
@@ -128,12 +132,13 @@
             </form>
         </div>
         
-        <div>        
+        <div>      
+            ${triangle.triangleArea}
             <%
                 // Set the values of the Objects displayed by the calculator
                 //Object base = "";
                 //Object height = "";
-                Object triangleArea = "";
+                //Object triangleArea = "";
                 
                 // Test to see if the named attributes are still null
                 // if any atribute is null, the String value for that attribute
@@ -150,7 +155,7 @@
                 } else {
                     height = "";
                 }
-                */
+                
                 
                 if(request.getAttribute("triangleArea") != null){
                     triangleArea = request.getAttribute("triangleArea");
@@ -160,7 +165,8 @@
                     out.println("<h3>Triangle Area: ${triangleArea} </h3>");
                 } else {
                     triangleArea = "";
-                }                
+                }  
+*/
             %>
         </div>
     </body>

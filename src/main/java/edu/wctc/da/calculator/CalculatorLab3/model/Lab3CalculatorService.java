@@ -9,13 +9,17 @@ package edu.wctc.da.calculator.CalculatorLab3.model;
  */
 public class Lab3CalculatorService {
     
-    private final double PI = 3.141593;
+//    private final double PI = 3.141593;
 
     /*
     Constructor for the Calculator Service Model
     */
     public Lab3CalculatorService() {
-    }    
+    } 
+    
+    private Circle circle = new Circle();
+    private Rectangle rectangle = new Rectangle();
+    private Triangle triangle = new Triangle();
         
     
     /**
@@ -27,6 +31,8 @@ public class Lab3CalculatorService {
      */
     public String CalculateAreaOfRectangle(String sWidth, String sHeight){
         
+        
+        
         // variables starting with an "s" indicate a String variable
         // variables starting with a "d" indicate a Double variable
         
@@ -36,8 +42,8 @@ public class Lab3CalculatorService {
         double dWidth = Double.parseDouble(sWidth);
         double dHeight = Double.parseDouble(sHeight);
         
-        dArea = dWidth * dHeight;
-        
+        dArea = rectangle.getRectangleArea();
+//        
         sArea = String.valueOf(dArea);
         
         return sArea;
@@ -59,7 +65,7 @@ public class Lab3CalculatorService {
         
         dRadius = Double.parseDouble(sRadius);
         
-        dArea = PI * dRadius * dRadius;
+        dArea = circle.getAreaOfCircle(dRadius);
         
         sArea = String.valueOf(dArea);
         
@@ -81,11 +87,11 @@ public class Lab3CalculatorService {
         double dArea = 0;
         double dBase = Double.parseDouble(sBase);
         double dHeight = Double.parseDouble(sHeight);
-        
-        // the area of a triangle is 1/2 the base times the height
-        dArea = 0.5 * dBase * dHeight;
-        
-        // The method returns a string value of the area
+//        
+//        // the area of a triangle is 1/2 the base times the height
+        dArea = triangle.getAreaOfTraingle(dBase, dHeight);
+//        
+//        // The method returns a string value of the area
         sArea = String.valueOf(dArea);
         
         return sArea;        
